@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+}
+
+header{
+  width: 100%;
+}
+
+.top-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #2b0c0c;
+  height: 35px;
+  padding: 0 60px;
+}
+
+.top-nav-left ul li, .top-nav-right ul li{
+  display: inline;
+}
+
+.top-nav-left ul li a, .top-nav-right ul li a{
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  color: #616060;
+}
+
+.top-nav-right ul li a{
+margin: 0 6px;
+}
+
+.middle-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.middle-nav .mid-nav-center ul li{
+  display: inline;
+}
+
+.middle-nav .mid-nav-right ul li{
+  display: inline;
+}
+
+.middle-nav .mid-nav-center ul li a{
+margin: 0 15px;
+text-decoration: none;
+color: #616060;
+font-size: 16px;
+font-family: 550;
+}
+
+.middle-nav .mid-nav-center ul li a:hover{
+color: rgb(231,9,9);
+  }
+
+  .middle-nav .mid-nav-right ul li a:hover{
+      color: rgb(231,9,9);
+        }
+
+.middle-nav .mid-nav-right ul li a{
+  margin: 0 12px;
+  color: #5e5c5c;
+  font-size: 22px;
+}
+
+.middle-nav .logo h1{
+  font-size: 32px;
+  color: rgb(235,8,8);
+  font-weight: 800;
+}
+
+.middle-nav .logo h1 span{
+  font-size: 25px;
+  color: rgb(77, 76, 76);
+  font-weight: 800;
+}
+
+.bottom-nav{
+  background: #000;
+}
+
+.bottom-nav p{
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.bottom-nav p a{
+  color: #e49449;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.menuBtn, .closeBtn{
+  font-size: 25px;
+  margin-right: 12px;
+  display: none;
+}
+
+
+/* Responsive Start From Here */
+/* Tablet Screen Responsive CSS */
+
+@media only screen and (max-width: 768px){
+  .top-nav .top-nav-left{
+      display: none;
+  }
+
+  .top-nav{
+      justify-content: center;
+  }
+
+  .bottom-nav p{
+      padding: 10px;
+      font-size: 13px;
+  }
+
+  .bottom-nav p a{
+      font-size: 13px;
+  }
+
+  .middle-nav .logo h1{
+      font-size: 28px;
+  }
+
+  .middle-nav .logo h1 span{
+      font-size: 22px;
+  }
+
+  .middle-nav .mid-nav-center{
+      position: absolute;
+      top: 150px;
+      left: 0;
+  }
+
+  .middle-nav .mid-nav-center ul li a{
+      margin: 0 8px;
+      font-size: 15px;
+      font-weight: 500;
+  }
+
+  .middle-nav{
+      height: 70px;
+  }
+}
+
+
+/* Mobile Screen Responsive Design */
+
+@media only screen and (max-width:520px){
+  .top-nav{
+      display: none;
+  }
+
+  .bottom-nav{
+      display: none;
+  }
+
+  .middle-nav{
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  #side-menu{
+      display: none;
+  }
+
+  .middle-nav .logo h1{
+      font-size: 24px;
+  }
+
+  .middle-nav .logo h1 span{
+      font-size: 18px;
+  }
+
+  .middle-nav .mid-nav-right h1 a{
+      margin: 0 7px;
+      font-size: 20px;
+  }
+
+  #side-menu{
+      background: rgb(245,237,237);
+      padding: 20px;
+  }
+
+  #side-menu li a{
+      display: block;
+      padding: 8px;
+      text-align: center;
+  }
+
+  .middle-nav .mid-nav-center{
+      top: 80px;
+      width: 100%;
+  }
+
+  .menuBtn, .closeBtn{
+      display: block;
+  }
+}
