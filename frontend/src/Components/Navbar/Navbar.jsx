@@ -65,7 +65,7 @@ function Navbar() {
           ☰
         </span>
         <h1>
-          Online <span>Shop</span>
+        Mytalorzone <span>By Sahiba</span>
         </h1>
       </div>
       <div className="mid-nav-center">
