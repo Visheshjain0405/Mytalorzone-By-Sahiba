@@ -15,6 +15,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(cors({
+  origin: "https://mytalorzone-by-sahiba-1.onrender.com/" // Allow your frontend URL
+}));
+
 // Database Connection
 connectDB();
 
